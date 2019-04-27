@@ -11,7 +11,7 @@ def countDigits(pidigits):
     return pd.Series(values,['0','1','2','3','4','5','6','7','8','9'])
 
 file=open('pi.txt','r')
-pi=str(file.read())
-pidigits=str((pi.split(".")[1]))  
+pi=file.read()
+pidigits=pi.split(".")[1]  
 print(countDigits(pidigits))
 
